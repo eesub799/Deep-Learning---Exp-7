@@ -1,35 +1,43 @@
-Deep-Learning---Exp-7
-Implement an Autoencoder in TensorFlow/Keras
+# Deep-Learning---Exp-7
 
-AIM
+**Implement an Autoencoder in TensorFlow/Keras**
+
+**AIM**
 
 To develop a convolutional autoencoder for image denoising application.
 
-THEORY
+**THEORY**
 
 An Autoencoder is an unsupervised neural network that learns to compress input data into a lower-dimensional representation and then reconstruct it back to its original form. It consists of an encoder that reduces the input dimensions and a decoder that rebuilds the input from this compressed data. The model is trained to minimize the reconstruction error between the original and reconstructed data. Autoencoders are widely used for dimensionality reduction, denoising, and anomaly detection tasks.
 
-Neural Network Model
+**Neural Network Model**
 
-image
-DESIGN STEPS
+<img width="1162" height="238" alt="image" src="https://github.com/user-attachments/assets/3c21c8db-ca54-42b9-b8e3-cbddf10bc3ff" />
 
-STEP 1: Import the necessary libraries and dataset.
 
-STEP 2: Load the dataset and scale the values for easier computation.
+**DESIGN STEPS**
 
-STEP 3:** Add noise to the images randomly for both the train and test sets.
+**STEP 1:** Import the necessary libraries and dataset.
 
-STEP 4: Build the Neural Model using Convolutional Layer Pooling Layer Up Sampling Layer. Make sure the input shape and output shape of the model are identical.
+**STEP 2:** Load the dataset and scale the values for easier computation.
 
-STEP 5: Pass test data for validating manually.
+**STEP 3**:** Add noise to the images randomly for both the train and test sets.
 
-STEP 6: Pass test data for validating manually.
+**STEP 4:** Build the Neural Model using
+            Convolutional Layer
+            Pooling Layer
+            Up Sampling Layer. Make sure the input shape and output shape of the model are identical.
+            
+**STEP 5:** Pass test data for validating manually.
 
-PROGRAM
+**STEP 6:** Pass test data for validating manually.
 
-Name: Shaik Eesub Register Number: 2305002021
+**PROGRAM** 
 
+**Name:** Shaik Eesub
+**Register Number:** 2305002021
+
+``` Python
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras import utils
@@ -128,17 +136,25 @@ for i in range(1, n + 1):
     ax.get_xaxis().set_visible(False)
     ax.get_yaxis().set_visible(False)
 plt.show()
-OUTPUT
+```
 
-Model Summary
+**OUTPUT**
 
-image
-Training loss
+**Model Summary**
 
-image
-Original vs Noisy Vs Reconstructed Image
+<img width="693" height="770" alt="image" src="https://github.com/user-attachments/assets/b6014bce-577e-4f43-a5a4-c36e027e9e26" />
 
-image
-RESULT
+
+**Training loss**
+
+<img width="781" height="584" alt="image" src="https://github.com/user-attachments/assets/8f166845-f1b2-4db8-b14a-0e0d1e13904a" />
+
+
+**Original vs Noisy Vs Reconstructed Image**
+
+<img width="890" height="219" alt="image" src="https://github.com/user-attachments/assets/eeb036b9-204c-4329-bbc5-aca2593ca604" />
+
+
+**RESULT**
 
 Thus we have successfully developed a convolutional autoencoder for image denoising application.
